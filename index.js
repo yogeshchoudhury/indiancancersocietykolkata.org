@@ -16,21 +16,21 @@ app.get('/', function(req, res) {
     res.render('home', {pageName: 'home'});
 });
 
-app.get('/about', function(req, res) {
-    res.render('about', {pageName: 'about'});
-});
+// app.get('/about', function(req, res) {
+//     res.render('about', {pageName: 'about'});
+// });
 
 app.get('/contact', function(req, res) {
     res.render('contact', {pageName: 'contact'});
 });
 
-app.get('/activities', function(req, res) {
-    res.render('activities', {pageName: 'activities'});
-});
+// app.get('/activities', function(req, res) {
+//     res.render('activities', {pageName: 'activities'});
+// });
 
-app.get('/privacy', function(req, res) {
-    res.render('privacy', {pageName: 'privacy'});
-});
+// app.get('/privacy', function(req, res) {
+//     res.render('privacy', {pageName: 'privacy'});
+// });
 
 app.use(function(req, res) {
     res.status(404).redirect('/');
